@@ -13,6 +13,7 @@ set(CMAKE_CXX_STANDARD 11)
 #设置gcc参数
 set(CMAKE_C_FLAGS -Wall)
 
+#源文件列表
 set(SOURCE_FILES 
 src/main.c 
 src/test.c
@@ -23,6 +24,7 @@ src/test.c
 message(CMAKE_C_FLAGS)
 message("${SOURCE_FILES}")
 
+#生成可执行库
 add_executable(demo ${SOURCE_FILES})
 
 
